@@ -21,7 +21,7 @@ if($size>$size_allowable){
 		throw Exception("too big image");
 }
 
-if(!preg_match($type,"/^image\/.*/")){
+if(!preg_match("/^image\/.*/",$type)){
 	echo "not image file"
 		throw Exception("not accepted file");
 }
