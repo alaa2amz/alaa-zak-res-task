@@ -5,5 +5,6 @@
 1)composer install
 2)touch database/database.sqlite
 2)php artisan migrate
-3)npm run build
-4)php artisan serve
+3)npm install
+4)npm run build
+5)php artisan serve
