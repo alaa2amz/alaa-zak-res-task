@@ -1,19 +1,62 @@
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<!--
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-	<script>
-function preview() {
-    frame.src=URL.createObjectURL(event.target.files[0]);
-    }
-	</script>
-	<div class="container">
-		<form><label for="fn">first name:</label>
-	    <input id="fn" type=text name="last_name" value="---"/>
-	    last name:
-	    <input type=text name="first_name" value="---"/>
-	    image:  
-	    <input type="file" onchange="preview()">
-	        <img id="frame" src="" width="100px" height="100px"/>
-    </form>
-    </div>
+<!DOCTYPE html>
+<!-- ALAA ZAKARIYA 2023-AUG RES CAPITAL -->
+<html>
+
+	<body>
+
+		<link href="tailwind.css" rel="stylesheet">
+
+		<script>
+		function preview() {
+		frame.src=URL.createObjectURL(event.target.files[0]);
+		}
+		</script>
+
+<div class="container my-auto mx-auto px-4 bg-red-200 py-10 bg-gray-200 w-full justify-center items-center">
+
+<form action="/action_page.php">
+
+<input type="hidden" name="CSRF-NO" value="ab5f77e5678#@686"/>
+
+<div class=" grid grid-cols-1 md:grid-cols-3 gap-4 bg-brown-400">
+
+<div>
+<label for="fname"
+class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+>First name:</label><br>
+<input type="text" id="fname" name="fname" value="" placeholder="your name!"
+class="appearance-none block w-full bg-amber-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+>
+</div>
+
+<div>
+<label for="lname"
+class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+>Last name:</label><br>
+<input type="text" id="lname" name="lname" value=""  placeholder="family name!"
+class="appearance-none block w-full bg-amber-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+>
+</div>
+
+<div>
+<label for="img"
+class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+>Photo:</label><br>
+<input id="img" type="file" onchange="preview()"
+class="appearance-none block w-full bg-amber-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+>
+<img  id="frame" src="" width="100px"  />
+</div>
+
+</div>
+
+<input type="submit" value="Submit"
+class="mx-auto appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3  focus:outline-none focus:bg-gray-500"
+/>
+
+</form> 
+
+<div/>
+
+</body>
+</html>

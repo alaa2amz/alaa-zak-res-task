@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS images (
 );
  */
 
-$size_allowable=1*1024;
+$size_allowable=2*1024;
 $size=$_FILES['image']['size'];
 $type=$_FILES['image']['type'];
 
