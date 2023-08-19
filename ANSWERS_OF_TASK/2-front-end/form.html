@@ -1,0 +1,19 @@
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+	<script>
+function preview() {
+    frame.src=URL.createObjectURL(event.target.files[0]);
+    }
+	</script>
+	<div class="container">
+		<form><label for="fn">first name:</label>
+	    <input id="fn" type=text name="last_name" value="---"/>
+	    last name:
+	    <input type=text name="first_name" value="---"/>
+	    image:  
+	    <input type="file" onchange="preview()">
+	        <img id="frame" src="" width="100px" height="100px"/>
+    </form>
+    </div>
