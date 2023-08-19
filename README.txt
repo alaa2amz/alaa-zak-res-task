@@ -1,5 +1,5 @@
 
--the remainders of task's answere in folder ANSWERS_OF_TASK
+-the remainders of task's answers in folder ANSWERS_OF_TASK
 
 -steps to run laravel app after cloning
 1)composer install
